@@ -15,6 +15,13 @@ module.exports = {
   plugins: ['react', '@typescript-eslint'],
   rules: {
     'comma-dangle': 0,
+    'react/function-component-definition': [
+      2,
+      {
+        namedComponents: 'arrow-function',
+        unnamedComponents: 'arrow-function'
+      },
+    ],
     'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
     'import/no-unresolved': 'error',
     'import/extensions': [
