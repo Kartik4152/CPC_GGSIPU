@@ -6,7 +6,7 @@ const Navbar = () => (
     <div className="flex items-center">
       <img src={logoIPU} alt="IPU Logo" className="w-16 h-16 object-contain mr-4" />
       <div className="flex flex-col">
-        <span className="leading-4 mb-1">Training and Placement Cell</span>
+        <span className="leading-4 mb-1">Centralised Placement Cell</span>
         <span className="border-t-[1px] border-black border-opacity-50 leading-4">Guru Gobind Singh Indraprastha University</span>
       </div>
     </div>

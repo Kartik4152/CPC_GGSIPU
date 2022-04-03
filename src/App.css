@@ -1,0 +1,9 @@
+.landing{
+    margin-top: 5rem;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.642), rgba(0, 0, 0, 0.632)), url('./assets/header-1.jpg');
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    color: #705a5a;
+}
