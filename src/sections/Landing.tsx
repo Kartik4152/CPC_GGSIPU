@@ -2,7 +2,7 @@
 import React from 'react';
 
 const Landing = () => (
-  <div className="landing pl-24 pt-12">
+  <div className="landing pl-24 flex items-center">
     <div className="flex flex-col text-white space-y-8">
       <div className="font-extrabold text-[5rem]">We Are Proud</div>
       <div className="text-[2rem] font-bold">
