@@ -9,6 +9,7 @@ import Navbar from './sections/Navbar';
 import Notices from './sections/Notices';
 import Recruiters from './sections/Recruiters';
 import AlumniCommunique from './sections/AlumniCommunique';
+import Rankings from './sections/Rankings';
 
 const App = () => (
   <>
@@ -18,6 +19,7 @@ const App = () => (
     <Recruiters />
     <AboutUs />
     <MessageFaculty />
+    <Rankings />
     <AlumniCommunique />
     <FAQ />
     <Footer />
