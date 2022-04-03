@@ -1,5 +1,6 @@
 /* eslint-disable max-len */
 import React from 'react';
+import Schools from './Schools';
 
 const Landing = () => (
   <div className="landing pl-24 flex items-center">
@@ -18,6 +19,7 @@ const Landing = () => (
         <button type="button" className="px-8 py-3 border-2 uppercase bg-white text-black">Our Story</button>
       </div>
     </div>
+    <Schools />
   </div>
 );
 
