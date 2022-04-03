@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 /* eslint-disable import/no-unresolved */
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -31,11 +32,11 @@ const Recruiters = () => (
       modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
       className="mySwiper"
     >
-      {companies.map((e: any) => (
-        <SwiperSlide>
+      {companies.map((e: any, index: number) => (
+        <SwiperSlide key={index}>
           <div className="w-full flex items-center h-32 p-8 justify-evenly">
-            {e.map((image: string) => (
-              <img src={image} alt="recruiter" className="object-contain w-1/6 h-8" />
+            {e.map((image: string, idx:number) => (
+              <img src={image} key={idx} alt="recruiter" className="object-contain w-1/6 h-8" />
             ))}
           </div>
         </SwiperSlide>

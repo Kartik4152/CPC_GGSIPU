@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 import React from 'react';
 import { IFacultyData as IAlumniTestimonial } from './MessageFaculty';
 import alum1 from '../assets/alumni/1.jpeg';
@@ -45,8 +46,8 @@ const AlumniCommunique = () => (
     <h1 className="text-base text-[#336CAE] font-bold mb-6">Alumni Communique</h1>
     <h2 className="text-4xl font-bold w-96 text-center mb-16">What Our Established Alumni Say</h2>
     <div className="w-full overflow-auto hide-scrollbar mt-8 flex pt-8">
-      {alumniData.map((e:IAlumniTestimonial) => (
-        <AlumniCard data={e} />
+      {alumniData.map((e:IAlumniTestimonial, index:number) => (
+        <AlumniCard data={e} key={index} />
       ))}
     </div>
   </div>
