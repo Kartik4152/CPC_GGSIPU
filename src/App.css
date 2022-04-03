@@ -7,3 +7,17 @@
     background-position: 50%;
     color: #705a5a;
 }
+
+.stroke-text{
+    -webkit-text-stroke: 1px #336CAE;
+    color: transparent;
+}
+
+.hide-scrollbar::-webkit-scrollbar{
+width: 0;
+background-color: transparent;
+}
+
+.perspective {
+    perspective: 1500px;
+}

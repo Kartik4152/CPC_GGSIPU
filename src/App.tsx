@@ -1,18 +1,26 @@
 import React from 'react';
 import './App.css';
-// import AboutUs from './sections/AboutUs';
+import AboutUs from './sections/AboutUs';
 import FAQ from './sections/FAQ';
 import Landing from './sections/Landing';
-// import Footer from './sections/Footer';
+import Footer from './sections/Footer';
+import MessageFaculty from './sections/MessageFaculty';
 import Navbar from './sections/Navbar';
+import Notices from './sections/Notices';
+import Recruiters from './sections/Recruiters';
+import AlumniCommunique from './sections/AlumniCommunique';
 
 const App = () => (
   <>
+    <Notices />
     <Navbar />
     <Landing />
-    {/* <AboutUs /> */}
+    <Recruiters />
+    <AboutUs />
+    <MessageFaculty />
+    <AlumniCommunique />
     <FAQ />
-    {/* <Footer /> */}
+    <Footer />
   </>
 );
 

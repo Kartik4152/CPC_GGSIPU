@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 /* eslint-disable max-len */
 import React from 'react';
 import Accordion from '@mui/material/Accordion';
@@ -23,7 +24,6 @@ const FAQ = () => {
   const [expanded, setExpanded] = React.useState<Number | false>(false);
 
   const handleChange = (panel: Number) => (event: any, isExpanded: boolean) => {
-    if (isExpanded) event.target.scrollIntoView();
     setExpanded(isExpanded ? panel : false);
   };
   return (
@@ -39,7 +39,7 @@ const FAQ = () => {
       </div>
       <div>
         {AccordianData.map((ele, index) => (
-          <Accordion expanded={expanded === index} onChange={handleChange(index)} className="mb-4 !shadow-none">
+          <Accordion expanded={expanded === index} onChange={handleChange(index)} key={index} className="mb-4 !shadow-none">
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1bh-content"
