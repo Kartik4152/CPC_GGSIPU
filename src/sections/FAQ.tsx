@@ -6,20 +6,8 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import SiteData from '../SiteData.json';
 
-const AccordianData = [{
-  heading: 'How many Contacts we Have?',
-  text: 'Yet bed any for  assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment.'
-}, {
-  heading: 'How many Contacts we Have?',
-  text: 'Yet bed any for  assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment.'
-}, {
-  heading: 'How many Contacts we Have?',
-  text: 'Yet bed any for  assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment.'
-}, {
-  heading: 'How many Contacts we Have?',
-  text: 'Yet bed any for  assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment.'
-}];
 const FAQ = () => {
   const [expanded, setExpanded] = React.useState<Number | false>(false);
 
@@ -27,18 +15,17 @@ const FAQ = () => {
     setExpanded(isExpanded ? panel : false);
   };
   return (
-    <div className="flex p-8 pt-16  space-x-4 min-h-[450px]">
+    <div className="flex p-8 pr-24 pt-16 justify-between min-h-[450px]">
       <div className="flex flex-col  space-y-8 py-4 px-10">
         <div className="text-6xl font-bold">
-          Any questions?
-          {' '}
+          {SiteData.faq.heading1}
           <br />
-          We got you.
+          {SiteData.faq.heading2}
         </div>
-        <div>Yet bed any for  assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment.</div>
+        <div>{SiteData.faq.subHeading}</div>
       </div>
       <div>
-        {AccordianData.map((ele, index) => (
+        {SiteData.faq.data.map((ele, index) => (
           <Accordion expanded={expanded === index} onChange={handleChange(index)} key={index} className="mb-4 !shadow-none">
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
@@ -46,12 +33,12 @@ const FAQ = () => {
               id="panel1bh-header"
             >
               <Typography sx={{ flexShrink: 0, fontWeight: 'bold' }}>
-                {ele.heading}
+                {ele.question}
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                {ele.text}
+                {ele.answer}
               </Typography>
             </AccordionDetails>
           </Accordion>

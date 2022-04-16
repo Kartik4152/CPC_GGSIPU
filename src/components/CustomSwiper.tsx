@@ -1,9 +1,11 @@
+/* eslint-disable max-len */
+/* eslint-disable global-require */
+/* eslint-disable import/no-dynamic-require */
 import React, { useState, useEffect, useRef } from 'react';
 // eslint-disable-next-line import/no-cycle
-import { IFacultyData } from '../sections/MessageFaculty';
 import Quotes from '../assets/quotes.png';
 
-const CustomSwiper:React.FC<{data: IFacultyData[]}> = ({ data }) => {
+const CustomSwiper:React.FC<{data: any[]}> = ({ data }) => {
   const [current, setCurrent] = useState(0);
   const scroller = useRef<HTMLDivElement>(null);
   useEffect(() => {
@@ -31,18 +33,16 @@ const CustomSwiper:React.FC<{data: IFacultyData[]}> = ({ data }) => {
       </div>
       {/* Scroll State */}
       <div className="flex space-x-2 absolute right-8 bottom-8">
-        <div className={`h-2 ${current === 0 ? 'w-8 bg-[#00B2FF]' : 'w-2 bg-[#336ACE]'} shrink-0 transition-all`} />
-        <div className={`h-2 ${current === 1 ? 'w-8 bg-[#00B2FF]' : 'w-2 bg-[#336ACE]'}  shrink-0 transition-all`} />
-        <div className={`h-2 ${current === 2 ? 'w-8 bg-[#00B2FF]' : 'w-2 bg-[#336ACE]'} shrink-0 transition-all`} />
+        {Array.from({ length: data.length }, (_, i) => i).map((val: number) => <div className={`h-2 ${current === val ? 'w-8 bg-[#00B2FF]' : 'w-2 bg-[#336ACE]'} shrink-0 transition-all`} />)}
       </div>
       <div className="w-fit flex scroll-smooth overflow-auto hide-scrollbar" ref={scroller}>
-        {data.map((e:IFacultyData) => (
+        {data.map((e:any) => (
           <div className="w-full shrink-0" key={e.name}>
             {/* Content */}
             <div className="flex">
               <div className="flex shrink-0 mr-8">
                 <div className="w-12 h-24 shrink-0 bg-[#336CAE]" />
-                <img src={e.image} alt="faculty" className="h-72 object-cover" />
+                <img src={require(e.image)} alt="faculty" className="h-72 object-cover" />
               </div>
               <div className="flex flex-col relative">
                 <img className="w-4/5 h-4/5 absolute object-contain opacity-10" src={Quotes} alt="quotes" />
