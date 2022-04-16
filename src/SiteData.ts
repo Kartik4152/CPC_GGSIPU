@@ -6,6 +6,7 @@ import sayantanChatterjee from 'assets/alumni/sayantanchatterjee.png';
 // import amitArya from 'assets/alumni/amitarya.jpg';
 import rohitKumar from 'assets/alumni/rohitkumar.jpg';
 import ankitAgarwal from 'assets/alumni/ankitagarwal.png';
+import pulkitBhatia from 'assets/alumni/pulkitbhatia.jpg';
 
 export default {
   landing: {
@@ -76,6 +77,12 @@ export default {
         designation: 'Co-Founder, (Hexaview Technologies)',
         image: ankitAgarwal,
         text: 'Ankit Agarwal is the founder member of Hexaview Technologies Inc. He has over 16+ years of experience in Technology, having spent nearly half a decade at Tech Stalwarts like, Oracle and Infosys. He has successfully led various engineering teams during his stint and is currently running a 200 plus successful IT company.'
+      },
+      {
+        name: 'Pulkit Bhatia',
+        designation: 'Software Engineer, (Meta)',
+        image: pulkitBhatia,
+        text: 'Pulkit Bhatia is a Senior software Engineer at Facebook in London. He is a seasoned and certified Software Developer with nearly 5 years of programming and application engineering experience using technology like Android, Go, Java, JavaScript, React, PHP, Python, Ruby.'
       }
     ]
   },

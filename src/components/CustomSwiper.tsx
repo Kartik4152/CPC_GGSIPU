@@ -8,6 +8,9 @@ import Quotes from '../assets/quotes.png';
 const CustomSwiper:React.FC<{data: any[]}> = ({ data }) => {
   const [current, setCurrent] = useState(0);
   const scroller = useRef<HTMLDivElement>(null);
+  const handleScroll = (e: any) => {
+    console.log(e);
+  };
   useEffect(() => {
     if (scroller.current) {
       const { width } = scroller.current.getBoundingClientRect();
@@ -35,9 +38,9 @@ const CustomSwiper:React.FC<{data: any[]}> = ({ data }) => {
       <div className="flex space-x-2 absolute right-8 bottom-8">
         {Array.from({ length: data.length }, (_, i) => i).map((val: number) => <div className={`h-2 ${current === val ? 'w-8 bg-[#00B2FF]' : 'w-2 bg-[#336ACE]'} shrink-0 transition-all`} />)}
       </div>
-      <div className="w-fit flex scroll-smooth overflow-auto hide-scrollbar" ref={scroller}>
+      <div className="w-fit flex scroll-smooth overflow-auto snap-x snap-mandatory hide-scrollbar" ref={scroller} onScroll={handleScroll}>
         {data.map((e:any) => (
-          <div className="w-full shrink-0" key={e.name}>
+          <div className="w-full shrink-0 snap-start" key={e.name}>
             {/* Content */}
             <div className="flex">
               <div className="flex shrink-0 mr-8">
