@@ -15,8 +15,8 @@ const FAQ = () => {
     setExpanded(isExpanded ? panel : false);
   };
   return (
-    <div className="flex p-8 pr-24 pt-16 justify-between min-h-[450px]">
-      <div className="flex flex-col  space-y-8 py-4 px-10">
+    <div className="flex p-8 pt-16 justify-between min-h-[450px]" id="faq">
+      <div className="flex flex-col space-y-8 py-4 px-10">
         <div className="text-6xl font-bold">
           {SiteData.faq.heading1}
           <br />
@@ -24,7 +24,7 @@ const FAQ = () => {
         </div>
         <div>{SiteData.faq.subHeading}</div>
       </div>
-      <div>
+      <div className="min-w-[40rem]">
         {SiteData.faq.data.map((ele, index) => (
           <Accordion expanded={expanded === index} onChange={handleChange(index)} key={index} className="mb-4 !shadow-none">
             <AccordionSummary

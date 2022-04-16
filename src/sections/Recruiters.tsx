@@ -1,47 +1,25 @@
-/* eslint-disable react/no-array-index-key */
-/* eslint-disable import/no-unresolved */
+/* eslint-disable */
+
 import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { chunk } from 'lodash-es';
+import Marquee from "react-fast-marquee";
 
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/autoplay';
-
-import {
-  Navigation, Pagination, Mousewheel, Keyboard, Autoplay
-} from 'swiper';
 
 function importAll(r: any) {
   return r.keys().map(r);
 }
 
-const companies = chunk(importAll((require as any).context('../assets/logos/', false, /\.(png|jpe?g|svg)$/)), 7);
+const companies = importAll((require as any).context('../assets/logos/', false, /\.(png|jpe?g|svg)$/));
+
 const Recruiters = () => (
-  <div className="w-full py-8">
+  <div className="w-full py-8" id="recruiters">
     <div className="w-full text-center text-2xl">
       Our Past Recruiters
     </div>
-    <Swiper
-      autoplay={{ delay: 2000 }}
-      loop
-      cssMode
-      mousewheel
-      keyboard
-      modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
-      className="mySwiper"
-    >
-      {companies.map((e: any, index: number) => (
-        <SwiperSlide key={index}>
-          <div className="w-full flex items-center h-32 p-8 justify-evenly">
-            {e.map((image: string, idx:number) => (
-              <img src={image} key={idx} alt="recruiter" className="object-contain w-1/6 h-8" />
-            ))}
-          </div>
-        </SwiperSlide>
-      ))}
-    </Swiper>
+    <Marquee speed={80} className='w-full py-12 overflow-hidden'>
+      {companies.map((image: string, idx: number) => (      
+            <img src={image} key={idx} alt="recruiter" className="object-contain w-1/6 h-8 mx-8" />
+          ))}
+    </Marquee>
   </div>
 );
 

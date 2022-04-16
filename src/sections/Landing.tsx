@@ -23,7 +23,7 @@ const Landing = () => {
     setState({ ...state, [anchor]: open });
   };
   return (
-    <div className="landing pl-24 flex items-center">
+    <div className="landing pl-24 flex items-center" id="home">
       <div className="flex flex-col text-white space-y-8">
         <div className="font-extrabold text-[5rem]">{SiteData.landing.heading1}</div>
         <div className="text-[2rem] font-bold">

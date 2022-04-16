@@ -11,11 +11,15 @@ const Navbar = () => (
       </div>
     </div>
     <div className="flex space-x-4 items-center">
-      <span>Home</span>
-      <span>Procedure</span>
-      <span>Recruiters</span>
-      <span>Statistics</span>
-      <div className="bg-[#003865] px-4 py-2 rounded-sm text-white">Login/Sign Up</div>
+      <span><a href="#home">Home</a></span>
+      <span><a href="#recruiters">Recruiters</a></span>
+      <span><a href="#about">About Us</a></span>
+      <span><a href="#faculty">Faculty</a></span>
+      <span><a href="#rankings">Rankings</a></span>
+      <span><a href="#alumni">Alumni</a></span>
+      <span><a href="#faq">FAQ</a></span>
+      <span><a href="#footer">Contact</a></span>
+      <div className="bg-[#003865] px-4 py-2 rounded-sm text-white cursor-pointer">Login/Sign Up</div>
     </div>
   </div>
 );

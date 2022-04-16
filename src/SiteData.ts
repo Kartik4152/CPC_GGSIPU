@@ -14,7 +14,7 @@ export default {
     heading2b: 'Indraprastha University',
     button1: 'OUR MISSION',
     button2: 'OUR SCHOOLS',
-    subheading: 'Kuch tho hai idhar dalna'
+    subheading: 'Igniting Minds, Nurturing Values'
   },
   aboutUs: {
     heading: 'About Us',
