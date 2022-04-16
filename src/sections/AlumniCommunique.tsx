@@ -1,7 +1,7 @@
 /* eslint-disable react/no-array-index-key */
 import React from 'react';
 import AlumniCard from '../components/AlumniCard';
-import SiteData from '../SiteData.json';
+import SiteData from '../SiteData';
 
 const AlumniCommunique = () => (
   <div id="alumni" className="w-full pt-8 flex flex-col items-center">

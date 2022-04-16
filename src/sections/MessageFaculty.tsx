@@ -1,7 +1,7 @@
 import React from 'react';
 // eslint-disable-next-line import/no-cycle
 import CustomSwiper from '../components/CustomSwiper';
-import SiteData from '../SiteData.json';
+import SiteData from '../SiteData';
 
 const MessageFaculty = () => (
   <div id="messageFaculty" className="w-full flex flex-col items-center pb-16">

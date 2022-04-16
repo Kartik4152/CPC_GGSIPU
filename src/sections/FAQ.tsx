@@ -6,7 +6,7 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import SiteData from '../SiteData.json';
+import SiteData from '../SiteData';
 
 const FAQ = () => {
   const [expanded, setExpanded] = React.useState<Number | false>(false);

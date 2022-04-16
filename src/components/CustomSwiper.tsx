@@ -42,10 +42,10 @@ const CustomSwiper:React.FC<{data: any[]}> = ({ data }) => {
             <div className="flex">
               <div className="flex shrink-0 mr-8">
                 <div className="w-12 h-24 shrink-0 bg-[#336CAE]" />
-                <img src={require(e.image)} alt="faculty" className="h-72 object-cover" />
+                <img src={e.image} alt="faculty" className="h-72 object-cover" />
               </div>
               <div className="flex flex-col relative">
-                <img className="w-4/5 h-4/5 absolute object-contain opacity-10" src={Quotes} alt="quotes" />
+                <img className="w-4/5 h-4/5 absolute object-contain opacity-10 -z-[1]" src={Quotes} alt="quotes" />
                 <h1 className="font-bold text-3xl">
                   <span className="block">{e.name.split(' ').splice(0, e.name.split(' ').length - 1).join(' ')}</span>
                   <span className="block">{e.name.split(' ')[e.name.split(' ').length - 1]}</span>

@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
 import React from 'react';
 import vibe from '../assets/vibe.jpg';
-import SiteData from '../SiteData.json';
+import SiteData from '../SiteData';
 
 const About = () => (
   <div className="w-full px-24 py-12 flex justify-center items-center" id="about">
