@@ -19,7 +19,8 @@ const Navbar = () => (
       <span><a href="#alumni">Alumni</a></span>
       <span><a href="#faq">FAQ</a></span>
       <span><a href="#footer">Contact</a></span>
-      <div className="bg-[#003865] px-4 py-2 rounded-sm text-white cursor-pointer">Login/Sign Up</div>
+      {/* <div className="bg-[#003865] px-4 py-2 rounded-s
+      m text-white cursor-pointer">Login/Sign Up</div> */}
     </div>
   </div>
 );
