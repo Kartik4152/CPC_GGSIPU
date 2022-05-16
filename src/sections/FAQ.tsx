@@ -24,7 +24,7 @@ const FAQ = () => {
         </div>
         <div>{SiteData.faq.subHeading}</div>
       </div>
-      <div className="min-w-[40rem]">
+      <div className="w-[50rem]">
         {SiteData.faq.data.map((ele, index) => (
           <Accordion expanded={expanded === index} onChange={handleChange(index)} key={index} className="mb-4 !shadow-none">
             <AccordionSummary

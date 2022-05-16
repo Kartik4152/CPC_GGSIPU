@@ -124,23 +124,23 @@ export default {
     data: [
       {
         question: 'How to contact us as a recruiter',
-        answer: 'nahi pta'
+        answer: 'Companies can reach us via the official email id of CPC, cpc@ipu.ac.in'
       },
       {
         question: 'How to contact us as a student',
-        answer: 'nahi pta'
+        answer: 'Each university school has four coordinators. Students can reach out to them and raise their queries.'
       },
       {
         question: 'What are the recent placement statistics',
-        answer: 'nahi pta'
+        answer: 'A total of 70+ companies visited the campus with 350+ number of offers and 90% of the students were placed.  Further, the highest package and average package offered during placements of 2022 were INR 44 LPA and INR 12 LPA , respectively.'
       },
       {
         question: 'What are the steps involved in the placement process',
-        answer: 'nahi pta'
+        answer: ' Following five steps are involved in the process of placement:- 1) Invitation 2) Seat Allocation 3)Pre Placement Talk 4) Selection Process & 5) Result Declaration'
       },
       {
         question: 'How do I escalate my query regarding placements',
-        answer: 'nahi pta'
+        answer: 'Each university school has four coordinators. Students can reach out to them and raise their queries.'
       }
     ]
   }
