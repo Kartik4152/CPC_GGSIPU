@@ -7,15 +7,46 @@ import sayantanChatterjee from 'assets/alumni/sayantanchatterjee.png';
 import rohitKumar from 'assets/alumni/rohitkumar.jpg';
 import ankitAgarwal from 'assets/alumni/ankitagarwal.png';
 import pulkitBhatia from 'assets/alumni/pulkitbhatia.jpg';
+import usict from 'assets/schools/usict.jpg';
+import usbt from 'assets/schools/usbt.jpg';
+import uslls from 'assets/schools/uslls.jpg';
+import usar from 'assets/schools/usar.jpg';
+import usdi from 'assets/schools/usdi.jpg';
+import usms from 'assets/schools/usms.jpg';
+import use from 'assets/schools/use.jpg';
+import ushss from 'assets/schools/ushss.jpg';
+import usem from 'assets/schools/usem.png';
+import usmc from 'assets/schools/usmc.png';
+import usbas from 'assets/schools/usbas.png';
+import usap from 'assets/schools/usap.png';
+import usct from 'assets/schools/usct.jpg';
+
+import ggsipu from 'assets/better_ggsipu.jpg';
 
 export default {
   landing: {
     heading1: 'We Are Proud',
     heading2a: 'Students of ',
     heading2b: 'Indraprastha University',
-    button1: 'OUR MISSION',
+    button1: 'NOTICES',
     button2: 'OUR SCHOOLS',
-    subheading: 'Igniting Minds, Nurturing Values'
+    subheading: 'Igniting Minds, Nurturing Values',
+    schools: [
+      { name: 'OUR SCHOOLS', image: ggsipu },
+      { name: 'USICT', image: usict, url: 'https://tnp-usict.netlify.app/' },
+      { name: 'USCT', image: usct, url: 'https://tnp-usict.netlify.app/' },
+      { name: 'USBT', image: usbt, url: 'https://tnp-usict.netlify.app/' },
+      { name: 'USLLS', image: uslls, url: 'https://sites.google.com/view/usllsipcell/home' },
+      { name: 'USAR', image: usar, url: 'https://tnp-usict.netlify.app/' },
+      { name: 'USDI', image: usdi, url: 'https://tnp-usict.netlify.app/' },
+      { name: 'USMS', image: usms, url: 'https://tnp-usict.netlify.app/' },
+      { name: 'USE', image: use, url: 'https://tnp-usict.netlify.app/' },
+      { name: 'USHSS', image: ushss, url: 'https://tnp-usict.netlify.app/' },
+      { name: 'USEM', image: usem, url: 'https://tnp-usict.netlify.app/' },
+      { name: 'USMC', image: usmc, url: 'https://tnp-usict.netlify.app/' },
+      { name: 'USBAS', image: usbas, url: 'https://tnp-usict.netlify.app/' },
+      { name: 'USAP', image: usap, url: 'https://tnp-usict.netlify.app/' },
+    ]
   },
   aboutUs: {
     heading: 'About Us',
